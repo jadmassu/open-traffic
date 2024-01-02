@@ -263,7 +263,7 @@ services:
       - postgres
       - redis
     environment:
-      - DBT_PROFILES_DIR=/dbt
-      - DBT_PROJECT_DIR=/dbt
+      - ./=/dbt
+      
 volumes:
   postgres-db-volume:
